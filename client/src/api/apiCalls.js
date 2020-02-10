@@ -1,7 +1,4 @@
 import { apiMock } from './apiMock'
-import { apiStore } from './apiSteamStore'
-// import { apiGame } from './apiSteamGame'
-import { apiSpy } from './apiSpy'
 
 
 export const getGameData = async () => {
@@ -31,21 +28,3 @@ export const getSingleGameData = async (gameId) => {
 	}
 }
 
-export const getSingleGameSpy = async (gameId) => {
-	try {
-		const resp = await apiSpy.get(`${gameId}`)
-		return resp.data
-	} catch (error) {
-		throw error
-	}
-}
-
-
-export const getAllSteamData = async () => {
-	try {
-		const resp = await apiStore.get('')
-		return resp.data
-	} catch (error) {
-		throw error
-	}
-}

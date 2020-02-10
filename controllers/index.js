@@ -25,6 +25,17 @@ const getAllSteamGames = async (req, res) => {
 	}
 }
 
+const getAllGamesSpy = async (req, res) => {
+	try {
+		const resp = await axios.get('https://steamspy.com/api.php?request=all');
+		console.log(resp.data)
+		res.json(resp.data);
+	} catch (error) {
+		console.log(error);
+		res.sendStatus(500);
+	}
+}
+
 const getSingleGameSteam = async (req, res) => {
 	console.log(`this is `, req)
 	try {
@@ -42,4 +53,5 @@ module.exports = {
 	getSingleGameSpy,
 	getSingleGameSteam,
 	getAllSteamGames,
+	getAllGamesSpy
 }
