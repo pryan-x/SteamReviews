@@ -1,0 +1,28 @@
+.card-wrapper:hover {
+    transform: scale(1.05);
+}
+.card-wrapper:hover .title {
+    color: black;
+}
+.delete-prompt-button:hover {
+    color: black;
+
+}
+.delete-prompt-button:hover .title {
+    color:white;
+}
+.navbar-link:hover {
+    transform: scale(1.025);
+    color: black;
+    transition: all 0.4s ease;
+}
+.dropdownbutton:hover {
+    color: black;
+    font-size: 16px;
+}
+.steam-link:hover {
+    transform: scale(1.05);
+}
+input:focus {
+    width: 25%;
+}

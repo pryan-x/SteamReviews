@@ -1,0 +1,78 @@
+button {
+    font-size: 15px;
+    font-weight: 700;
+    background-color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 340px;
+    margin: 10px;
+}
+.card-wrapper {
+    background-color: #D90429;
+    position: relative;
+    transition: all 0.4s ease;
+}
+.card-img {
+    width: 100%
+}
+a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+}
+.title {
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    transition: all 0.4s ease;
+}
+.showPromptButton {
+    position: static;
+}
+.delete-prompt-button {
+    top: 0;
+    right: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 11px;
+    position: absolute;
+    background-color: #D90429;
+    color: white;
+    border-radius: 1px;
+    transition: all 0.4s ease;
+}
+.delete-prompt {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 0;
+}
+.buttonCheck {
+    padding: 5px 10px;
+    background-color: #D90429;
+    color: white;
+}
+.delete-menu {
+    padding: 6px 0;
+    background-color: #2B2D42;
+}

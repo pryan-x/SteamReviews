@@ -1,0 +1,134 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body{
+    /* font-family: 'Exo 2', sans-serif; */
+    /* font-family: 'Odibee Sans', cursive; */
+    font-family: 'Source Sans Pro', sans-serif;
+}
+header {
+    background-color: #EDF2F4;
+    background-color: #2B2D42;
+    /* background-color: #8D99AE; */
+    display: flex;
+    justify-content: center;
+}
+nav{
+    width: 100%;
+}
+.NavLink {
+    text-decoration: none;
+}
+.row-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+}
+.navbar-link {
+    font-size: 32px;
+    font-family: 'Odibee Sans', sans-serif;
+    background-color: #D90429;
+    color: white;
+    display: flex;
+    align-items: center;
+    line-height: 52px;
+    padding: 0 30px;
+    margin: 0 25px;
+    height: 60%;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+    height: 80%;
+    width: 50%;
+    max-width: 625px;
+    min-width: 500px;
+    background-color: #D90429;
+    
+}
+.logo-img {
+    height: 50px;
+    width: 50px;
+    padding-left: 20px;
+}
+.logo-text {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 4px;
+    padding: 0 20px;
+}
+button {
+    border-style: unset;
+
+}
+@media (max-width:960px) {
+    .logo-text {
+        font-size: 30px;
+    }
+    .logo-container {
+        width: 30%;
+        min-width: 350px;
+    }
+    .navbar-link {
+        font-size: 22px;
+        padding: 0 20px;
+    }
+}
+@media (max-width:680px) {
+    .logo-text {
+        font-size: 24px;
+    }
+    .logo-container {
+        width: fit-content;
+        min-width: unset;
+    }
+    .navbar-link {
+        font-size: 18px;
+        padding: 0 15px;
+        line-height: 38px;
+        height: 45%;
+        margin: unset;
+    }
+}
+@media (max-width:530px) {
+    .logo-text {
+        font-size: 20px;
+        padding: 7px;
+    }
+    .logo-container {
+        height: 65%;
+    }
+    .logo-img {
+        padding-left: 5px;
+        height: 30px;
+        width: 30px;
+    }
+    .navbar-link {
+        padding: 0 7px;
+    }
+}

@@ -1,0 +1,16 @@
+.dropdownbutton {
+    border: 2px solid #2B2D42;
+    background-color: #D90429;
+    color: white;
+    margin: 2px;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    /* background-color: #EDF2F4;
+background-color: #2B2D42; */
+}
+.addGame {
+    color: white;
+}

@@ -1,0 +1,175 @@
+p {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+.page-container {
+    margin: 0 40px;
+}
+.title-wrapper {
+    width: 40%;
+    max-width: 480px;
+    min-width: 300px;
+}
+.title-img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.game-page.title {
+    width: 100%;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.img-wrapper {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+}
+.page-img {
+    width: 100%;
+    min-width: 300px;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+.game-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    max-width: 480px;
+    min-width: 380px;
+}
+.game-info {
+    width: 100%;
+    margin: 0 15px;
+}
+.detail-arr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.dev-publisher {
+    width: 100%;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+
+.details-container {
+    display: flex;
+    justify-content: space-between;
+}
+.game-details {
+    min-width: 150px;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+.game-details.child{
+    width: 100%;
+    text-align: right;
+}
+h2 {
+    width: 100%;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    text-align: left;
+}
+.tags {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 460px;
+    min-width: 300px;
+}
+.tags-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.tag-container {
+    padding: 0 15px
+}
+.tag-names{
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    margin: 8px 0
+}
+.link-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.steam-link {
+    text-decoration: underline;
+    border: 1.5px solid white;
+    border-radius: 2px;
+    width: fit-content;
+    padding: 5px;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    transition: all 0.4s ease;
+}
+li {
+    list-style: none;
+}
+.game-about-container{
+    margin: 30px 40px;
+}
+.about-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.about {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    width: 85%;
+    margin: 0 0 25px 30px;
+}
+.screenshots {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+.screenshot-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 550px;
+}
+.screenshot {
+    display: block;
+    width: 100%
+}
+@media (max-width: 1000px) {
+    .game-page.title {
+        font-size: 35px;
+    }
+    .wrapper {
+        flex-wrap: wrap;
+    }
+    .tags {
+        margin-top: 35px;
+    }
+    .game-info-container {
+        margin-top: 30px;
+    }
+    .screenshot-wrapper {
+        flex: 1 0 550px;
+    }   
+}
