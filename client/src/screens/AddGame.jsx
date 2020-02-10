@@ -15,8 +15,16 @@ class AddGame extends React.Component {
 
     fetchSteamValues = async () => {
         let data = await axios.get('https://fathomless-shelf-02833.herokuapp.com/api/applist')
-        // let data = await axios.get('https://localhost:3005/api/applist')
+        const dataJustGames = await axios.get('https://fathomless-shelf-02833.herokuapp.com/api/applistspy')
         console.log(data)
+        console.log(dataJustGames)
+        const justGames = []
+        data.data.applist.apps.map(app => {
+            if (dataJustGames[app.appid]) {
+                return app
+            }
+        });
+        console.log(justGames)
         // this.setState({
         //     steamData: data.applist.apps
         // })
