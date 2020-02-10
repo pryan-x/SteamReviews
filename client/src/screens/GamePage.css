@@ -156,6 +156,7 @@ li {
     display: block;
     width: 100%
 }
+
 @media (max-width: 1000px) {
     .game-page.title {
         font-size: 35px;
@@ -172,4 +173,22 @@ li {
     .screenshot-wrapper {
         flex: 1 0 550px;
     }   
+}
+
+@media (max-width: 630px) {
+    .screenshot-wrapper {
+        flex: unset;
+    }
+}
+
+@media (max-width: 1150px) {
+    .about-wrapper {
+        justify-content: flex-start;
+    } 
+    .about {
+        margin: 0 0 25px 0;
+    }
+    .game-about-container {
+        margin: 30px 20px
+    }
 }

@@ -19,14 +19,14 @@ class GamePage extends React.Component {
     fetchGameValues = async (appid) => {
         let data
         try {
-            data = await Axios.get(`https://store.steampowered.com/api/appdetails?appids=${appid}`)
+            data = await Axios.get(`https://fathomless-shelf-02833.herokuapp.com/api/game/${appid}`)
         } catch (error) {
             throw error
         }
 
         let spy
         try {
-            spy = await Axios.get(`https://steamspy.com/api.php?request=appdetails&appid=${appid}`)
+            spy = await Axios.get(`https://fathomless-shelf-02833.herokuapp.com/api/gamespy/${appid}`)
         } catch (error) {
             throw error
         }

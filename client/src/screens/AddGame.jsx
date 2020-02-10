@@ -1,6 +1,6 @@
 import React from 'react'
 import Match from './Match'
-import { getAllSteamData } from '../api/apiCalls'
+import axios from 'axios'
 import { apiMock } from '../api/apiMock'
 
 
@@ -14,11 +14,12 @@ class AddGame extends React.Component {
     }
 
     fetchSteamValues = async () => {
-        let data = await getAllSteamData()
-
-        this.setState({
-            steamData: data.applist.apps
-        })
+        let data = await axios.get('https://fathomless-shelf-02833.herokuapp.com/api/applist')
+        // let data = await axios.get('https://localhost:3005/api/applist')
+        console.log(data)
+        // this.setState({
+        //     steamData: data.applist.apps
+        // })
     }
 
     handleChange = (event) => {
